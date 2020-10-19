@@ -1,0 +1,49 @@
+/*import del reset*/
+@import "reset";
+
+/*import dels colors*/
+@import "colors";
+
+/*estableix font pel document*/
+html {
+  font-family: "Lato", sans-serif;
+}
+
+/*flex al body per ordenar els elements en row, padding per separar-los y 100 unitats de viewport heigth*/
+body {
+  display: flex;
+  padding: 5px;
+  min-height: 100vh;
+}
+
+/*ample de 20% per cada columna , marge exterior de 5px , display flex per centrar contingut*/
+.columna {
+  width: 20%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*variable per indicar posicio inicial de cada element*/
+$position: 0;
+/*bucle per indicar posicio inicial de cada columna*/
+@for $i from 1 through 5 {
+  .columna:nth-child(#{$i}) {
+    left: $position;
+  }
+  /*incrementa posicio*/
+  $position: $position + 20;
+}
+
+/* flex per centrar el contingut */
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* escala el tamany de la font depenent de l'area de visualitzacio */
+h1 {
+  font-size: 3.5vw;
+}

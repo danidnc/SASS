@@ -1,0 +1,30 @@
+//Colors utilitzats
+
+$color1: #244f75;
+$color2: #60bfbf;
+$color3: #8c4b7e;
+$color4: #f8bb44;
+$color5: #f24b4b;
+$textcolor: white;
+
+/* asignacio de colors a cada columna*/
+.columna:nth-child(1) {
+  background-color: $color1;
+}
+.columna:nth-child(2) {
+  background-color: $color2;
+}
+.columna:nth-child(3) {
+  background-color: $color3;
+}
+.columna:nth-child(4) {
+  background-color: $color4;
+}
+.columna:nth-child(5) {
+  background-color: $color5;
+}
+
+/*asignacio de color a l'element h1*/
+h1 {
+  color: $textcolor;
+}

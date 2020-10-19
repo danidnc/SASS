@@ -1,0 +1,89 @@
+/*import del reset*/
+/* reset dels marges*/
+* {
+  box-sizing: border-box; }
+
+/* mixin amb els valors a modificar*/
+/* elements a palicar el reset del mixin*/
+html,
+body,
+div,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/*import dels colors*/
+/* asignacio de colors a cada columna*/
+.columna:nth-child(1) {
+  background-color: #244f75; }
+
+.columna:nth-child(2) {
+  background-color: #60bfbf; }
+
+.columna:nth-child(3) {
+  background-color: #8c4b7e; }
+
+.columna:nth-child(4) {
+  background-color: #f8bb44; }
+
+.columna:nth-child(5) {
+  background-color: #f24b4b; }
+
+/*asignacio de color a l'element h1*/
+h1 {
+  color: white; }
+
+/*estableix font pel document*/
+html {
+  font-family: "Lato", sans-serif; }
+
+/*flex al body per ordenar els elements en row, padding per separar-los y 100 unitats de viewport heigth*/
+body {
+  display: flex;
+  padding: 5px;
+  min-height: 100vh; }
+
+/*ample de 20% per cada columna , marge exterior de 5px , display flex per centrar contingut*/
+.columna {
+  width: 20%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*variable per indicar posicio inicial de cada element*/
+/*bucle per indicar posicio inicial de cada columna*/
+.columna:nth-child(1) {
+  left: 0; }
+
+/*incrementa posicio*/
+.columna:nth-child(2) {
+  left: 20; }
+
+/*incrementa posicio*/
+.columna:nth-child(3) {
+  left: 40; }
+
+/*incrementa posicio*/
+.columna:nth-child(4) {
+  left: 60; }
+
+/*incrementa posicio*/
+.columna:nth-child(5) {
+  left: 80; }
+
+/*incrementa posicio*/
+/* flex per centrar el contingut */
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* escala el tamany de la font depenent de l'area de visualitzacio */
+h1 {
+  font-size: 3.5vw; }

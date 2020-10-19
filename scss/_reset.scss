@@ -1,0 +1,23 @@
+/* reset dels marges*/
+* {
+  box-sizing: border-box;
+}
+
+/* mixin amb els valors a modificar*/
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* elements a palicar el reset del mixin*/
+html,
+body,
+div,
+h1,
+p {
+  @include reset-list;
+}
